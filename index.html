@@ -66,6 +66,9 @@
         .firstSection > div{
              width: 30%;
         }
+        .firstSection .buttons .btn:hover{
+            background-color: #666;
+        }
         .leftSection{
           font-size: 3rem;
         }
@@ -80,6 +83,7 @@
             border-radius: 6px;
             font-size: 20px;
             cursor: pointer;
+            
         }
 
         .rightSection img{
@@ -151,7 +155,111 @@
         color: gray;
         padding: 12px 0;
         }
-       
+
+        
+/* CSS */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 80vw;
+}
+
+.card {
+  background-color: #423b3b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card-image {
+  height: 150px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card-text:hover {
+    background-color: #423b3b;
+}
+
+.card-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background-color: #3e8e41;
+}
+
+
+
+
+    /* Add media queries for responsive design */
+    @media only screen and (max-width: 600px) {
+    nav {
+        max-width: 100vw;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        height: 62px;
+    }
+
+    main{
+        max-width: 100vw;
+        display: flex;
+        /* padding: 10px 0 10px 0; */
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+    }
+    footer{
+        max-width: 100vw;
+        display: flex;
+        /* padding: 10px 0 10px 0; */
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+    }
+    
+} 
     </style>
 </head>
 <body>
@@ -238,7 +346,48 @@
 
 
         
-           
+        
+
+<div class="container">
+    <div class="card">
+      <div class="card-image">
+        <img src="dsa.jpg" alt="Card Image">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">DSA Projects</h2>
+        <p class="card-text">
+            <ul>
+                <li>To Do List</li>
+                <li>phonebook application</li>
+                <li>Billing Software</li>
+            </ul>
+        </p>
+        <button class="card-btn">Learn More</button>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+          <div class="card-image">
+            <img src="web.jpeg" alt="Card Image">
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Web Projects</h2>
+            <p class="card-text">
+                <ul>
+                    <li>Netflix Clone</li>
+                    <li>Analog Clock</li>
+                </ul>
+            </p>
+            <button class="card-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  
+
     </main>
 
     <footer>

@@ -1,279 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshat - Developer Portfolio</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: rgb(7, 7, 64);
-            color: white;
-            font-family: 'Poppins',sans-serif;
-        
-            background-image: url(background.png);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 85vh;
-            position: relative;
-            background-blend-mode: multiply;
-        }
-        nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(10, 10, 47);
-        }
-        nav ul{
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            list-style: none;
-            margin: 0 23px
-        }
-
-        nav ul li a{
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover{
-            color: rgb(153,153,226);
-            font-size: 1.01rem;
-        }
-        main hr{
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 40px 84px;
-        }
-        .left{
-            font-size:1.5rem;
-        }
-        .firstSection{
-            display: flex;
-            justify-content: space-around;
-             align-items: center;
-            margin: 140px 0;
-
-        }
-        .firstSection > div{
-             width: 30%;
-        }
-        .firstSection .buttons .btn:hover{
-            background-color: #666;
-        }
-        .leftSection{
-          font-size: 3rem;
-        }
-        .leftSection .buttons{
-            padding: 50px 0;
-        }
-        .leftSection .btn{
-            padding: 12px;
-            background: #1e2167;
-            color: white;
-            border: 2px solid white;
-            border-radius: 6px;
-            font-size: 20px;
-            cursor: pointer;
-            
-        }
-
-        .rightSection img{
-            width: 80%;
-            margin: 50px 0;
-
-        }
-        .purple{
-            color: rgb(170,107,228);
-        }
-        .text-gray{
-                color: gray;
-        }
-        #element{
-            color: rgb(170,107,228);
-        }
-        .secondsection{
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-        .secondsection h1{
-            font-size: 1.9rem;
-        }
-        .secondsection .box{
-               background: white;
-               width: 78vw;
-               height: 2px;
-               margin: 56px 0;
-            display: flex;
-        }
-        .secondsection .vertical{
-             height: 93px;
-             width: 1px;
-             background-color: white;
-             margin: 0 120px;
-        }
-     
-     
-        .image-top{
-            width: 23px;
-            position: relative;
-            top: -32px;
-            left: -9px;
-        }
-        .vertical-title{
-               position: relative;
-               top: 75px;
-               width: 150px;
-        }
-
-        .vertical-desc{
-
-        }
-        footer{
-            background-color: rgb(51, 51, 156);
-            
-        }
-        .footer{
-            display: flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-        }
-        .footer ul{
-        list-style: none;
-        }
-        footer .footer-rights{
-        text-align: center;
-        color: gray;
-        padding: 12px 0;
-        }
-
-        
-/* CSS */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  width: 80vw;
-}
-
-.card {
-  background-color: #423b3b;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 300px;
-  height: 400px;
-  margin: 20px;
-  display: inline-block;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.card-image {
-  height: 150px;
-  overflow: hidden;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.card-content {
-  padding: 20px;
-}
-
-.card-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.card-text {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.card-text:hover {
-    background-color: #423b3b;
-}
-
-.card-btn {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.card-btn:hover {
-  background-color: #3e8e41;
-}
-
-
-
-
-    /* Add media queries for responsive design */
-    @media only screen and (max-width: 600px) {
-    nav {
-        max-width: 100vw;
-        display: flex;
-        padding: 10px;
-        align-items: center;
-        justify-content: space-between;
-        height: 62px;
-    }
-
-    main{
-        max-width: 100vw;
-        display: flex;
-        /* padding: 10px 0 10px 0; */
-        padding: 10px;
-        align-items: center;
-        justify-content: space-between;
-        height: 50px;
-    }
-    footer{
-        max-width: 100vw;
-        display: flex;
-        /* padding: 10px 0 10px 0; */
-        padding: 10px;
-        align-items: center;
-        justify-content: space-between;
-        height: 50px;
-    }
-    
-} 
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
             <div class="left">Akshat's Portfolio</div>
             <div class="right">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact Me</a></li>
-            </ul>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -281,145 +27,138 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-            Hi, I am <span class="purple">Akshat</span>
-            <div>and I am a passionate</div>
-            <span id="element"></span>
-            <div class="buttons">
-               <button class="btn">Download Resume</button>
-               <button class="btn">Visit Github</button>
-               <button class="btn">visit Linkedin</button>
-            </div>
+                Hi, I am <span class="purple">Akshat</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                    <button class="btn">visit Linkedin</button>
+                </div>
             </div>
             <div class="rightSection">
-            <img src="dev png.png" alt="">
+                <img src="dev png.png" alt="">
             </div>
         </section>
         <hr>
         <section class="secondsection">
             <span class="text-gray"> What I have done so far</span>
-          <h1>Work Experience</h1>
+            <h1>Work Experience</h1>
 
 
-          <div class="box">
+            <div class="box">
 
-            <div class="vertical">
-                <img class="image-top"  src="html.png" alt="">
-                <div class="vertical-title">
-               HTML  Developer 
-            </div>
-            <div class="vertical-desc">
-            </div>
-            </div>
-
-            <div class="vertical">
-                <img class="image-top"  src="css.png" alt="">
-            <div class="vertical-title">
-               CSS Developer
-            </div>
-            <div class="vertical-desc">
-                
-            </div>
-            </div>
-            <div class="vertical">
-                <img class="image-top"  src="js2.jpg " alt="">
-                <div class="vertical-title">
-                JS Developer
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer
+                    </div>
+                    <div class="vertical-desc">
+                    </div>
                 </div>
-            </div>
 
-            <div class="vertical">
-                <img class="image-top"  src="figmaa.webp" alt="">
-                <div class="vertical-title">
-                Figma Designer
+                <div class="vertical">
+                    <img class="image-top" src="css.png" alt="">
+                    <div class="vertical-title">
+                        CSS Developer
+                    </div>
+                    <div class="vertical-desc">
+
+                    </div>
                 </div>
-            </div>
-            
-            <div class="vertical">
-                <img class="image-top"  src="hacker.png" alt="">
-                <div class="vertical-title">
-                Data Structures and Algorithms
+                <div class="vertical">
+                    <img class="image-top" src="js2.jpg " alt="">
+                    <div class="vertical-title">
+                        JS Developer
+                    </div>
                 </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="figmaa.webp" alt="">
+                    <div class="vertical-title">
+                        Figma Designer
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="hacker.png" alt="">
+                    <div class="vertical-title">
+                        Data Structures and Algorithms
+                    </div>
+                </div>
+
             </div>
-          
-          </div>
         </section>
-
-
         
-        
-
-<div class="container">
-    <div class="card">
-      <div class="card-image">
-        <img src="dsa.jpg" alt="Card Image">
-      </div>
-      <div class="card-content">
-        <h2 class="card-title">DSA Projects</h2>
-        <p class="card-text">
-            <ul>
-                <li>To Do List</li>
-                <li>phonebook application</li>
-                <li>Billing Software</li>
-            </ul>
-        </p>
-        <button class="card-btn">Learn More</button>
-      </div>
-    </div>
-
-    <div class="container">
-        <div class="card">
-          <div class="card-image">
-            <img src="web.jpeg" alt="Card Image">
-          </div>
-          <div class="card-content">
-            <h2 class="card-title">Web Projects</h2>
-            <p class="card-text">
-                <ul>
-                    <li>Netflix Clone</li>
-                    <li>Analog Clock</li>
-                </ul>
-            </p>
-            <button class="card-btn">Learn More</button>
-          </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-image">
+                    <img src="dsa.jpg" alt="Card Image">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">DSA Projects</h2>
+                    <p class="card-text">
+                    <ul>
+                        <li>To Do List</li>
+                        <li>phonebook application</li>
+                        <li>Billing Software</li>
+                    </ul>
+                    </p>
+                    <button class="card-btn">Learn More</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="web.jpeg" alt="Card Image">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Web Projects</h2>
+                    <p class="card-text">
+                    <ul>
+                        <li>Netflix Clone</li>
+                        <li>Analog Clock</li>
+                    </ul>
+                    </p>
+                    <button class="card-btn">Learn More</button>
+                </div>
+            </div>
         </div>
-      </div>
-  </div>
 
 
-  
+
 
     </main>
 
     <footer>
         <div class="footer">
             <div class="footer-first">
-           <h3>Akshat Developer Portfolio</h3>
+                <h3>Akshat Developer Portfolio</h3>
             </div>
             <div class="footer-second">
-     <ul>
+                <ul>
 
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Contact me</li>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact me</li>
 
-     </ul>
-            </div>  
+                </ul>
+            </div>
             <div class="footer-third"></div>
-             <ul>
+            <ul>
 
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
 
-     </ul>
+            </ul>
             <div class="footer-fourth"></div>
 
 
         </div>
         <div class="footer-rights">
-       copyright &#169; www.akshatportfolio.com | All rights reserved
+            copyright &#169; www.akshatportfolio.com | All rights reserved
         </div>
     </footer>
 
@@ -427,11 +166,12 @@
     <!--setup and start animation!-->
     <script>
         var typed = new Typed('#element', {
-          strings: ['Web Developer', 'Web Designer','Tech Enthusiast'],
-          typeSpeed: 50,
+            strings: ['Web Developer', 'Web Designer', 'Tech Enthusiast'],
+            typeSpeed: 50,
         });
-      </script>
+    </script>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </body>
+
 </html>
